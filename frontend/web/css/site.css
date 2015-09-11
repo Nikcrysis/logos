@@ -343,12 +343,16 @@ a.desc:after {
 
     .sample{
         background-color: #eeeeee;
-        min-height: 540px;
+        /*min-height: 540px;*/
+    }
+
+    .sample .col-sm-2{
+        width: 228px;
     }
 
     .sample_cont{
-        margin: 40px 0 0;
-        min-height: 500px;
+        text-align: center;
+        margin: 40px auto;
     }
 
     .sample-logo{
@@ -363,10 +367,10 @@ a.desc:after {
     /*-------------------- FLIP ---------------------*/
         #f1_container {
             float: left;
-            width:20%;
-            height: 230px;
+            width:228px;
+            height: 225px;
             padding: 0;
-            margin: 0;
+            margin: 0 auto;
             z-index: 1;
         }
         #f1_container {
@@ -392,7 +396,7 @@ a.desc:after {
             display: block;
             transform: rotateY(180deg);
             box-sizing: border-box;
-            padding: 10px;
+            /*padding: 10px;*/
             color: white;
             text-align: center;
             background-color: #aaa;

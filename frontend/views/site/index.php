@@ -203,9 +203,9 @@ $this->title = 'Logos';
 
     <div class="sample">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12 sample_cont">
-                 <!--   <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/1.png" alt=""/></div>
+            <div class="">
+                <div class="sample_cont clearfix">
+                    <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/1.png" alt=""/></div>
                     <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/2.png" alt=""/></div>
                     <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/3.png" alt=""/></div>
                     <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/4.png" alt=""/></div>
@@ -214,15 +214,15 @@ $this->title = 'Logos';
                     <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/7.png" alt=""/></div>
                     <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/8.png" alt=""/></div>
                     <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/9.png" alt=""/></div>
-                    <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/10.png" alt=""/></div>-->
+                    <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/10.png" alt=""/></div>
 
-                    <div id="f1_container">
+                    <!--<div id="f1_container">
                         <div id="f1_card" class="shadow">
                             <div class="front face">
-                                <img src="/src/sample/1.png"/>
+                                <img class="img-responsive" src="/src/sample/1.png"/>
                             </div>
                             <div class="back face center">
-                                
+
                                 <p>Any content can go here.</p>
                             </div>
                         </div>
@@ -230,10 +230,10 @@ $this->title = 'Logos';
                     <div id="f1_container">
                         <div id="f1_card" class="shadow">
                             <div class="front face">
-                                <img src="/src/sample/2.png"/>
+                                <img class="img-responsive" src="/src/sample/2.png"/>
                             </div>
                             <div class="back face center">
-                                
+
                                 <p>Any content can go here.</p>
                             </div>
                         </div>
@@ -241,10 +241,10 @@ $this->title = 'Logos';
                     <div id="f1_container">
                         <div id="f1_card" class="shadow">
                             <div class="front face">
-                                <img src="/src/sample/3.png"/>
+                                <img class="img-responsive" src="/src/sample/3.png"/>
                             </div>
                             <div class="back face center">
-                                
+
                                 <p>Any content can go here.</p>
                             </div>
                         </div>
@@ -252,10 +252,10 @@ $this->title = 'Logos';
                     <div id="f1_container">
                         <div id="f1_card" class="shadow">
                             <div class="front face">
-                                <img src="/src/sample/4.png"/>
+                                <img class="img-responsive" src="/src/sample/4.png"/>
                             </div>
                             <div class="back face center">
-                                
+
                                 <p>Any content can go here.</p>
                             </div>
                         </div>
@@ -263,10 +263,10 @@ $this->title = 'Logos';
                     <div id="f1_container">
                         <div id="f1_card" class="shadow">
                             <div class="front face">
-                                <img src="/src/sample/5.png"/>
+                                <img class="img-responsive" src="/src/sample/5.png"/>
                             </div>
                             <div class="back face center">
-                                
+
                                 <p>Any content can go here.</p>
                             </div>
                         </div>
@@ -274,10 +274,10 @@ $this->title = 'Logos';
                     <div id="f1_container">
                         <div id="f1_card" class="shadow">
                             <div class="front face">
-                                <img src="/src/sample/6.png"/>
+                                <img class="img-responsive" src="/src/sample/6.png"/>
                             </div>
                             <div class="back face center">
-                                
+
                                 <p>Any content can go here.</p>
                             </div>
                         </div>
@@ -285,10 +285,10 @@ $this->title = 'Logos';
                     <div id="f1_container">
                         <div id="f1_card" class="shadow">
                             <div class="front face">
-                                <img src="/src/sample/7.png"/>
+                                <img class="img-responsive" src="/src/sample/7.png"/>
                             </div>
                             <div class="back face center">
-                                
+
                                 <p>Any content can go here.</p>
                             </div>
                         </div>
@@ -296,10 +296,10 @@ $this->title = 'Logos';
                     <div id="f1_container">
                         <div id="f1_card" class="shadow">
                             <div class="front face">
-                                <img src="/src/sample/8.png"/>
+                                <img class="img-responsive" src="/src/sample/8.png"/>
                             </div>
                             <div class="back face center">
-                                
+
                                 <p>Any content can go here.</p>
                             </div>
                         </div>
@@ -307,10 +307,10 @@ $this->title = 'Logos';
                     <div id="f1_container">
                         <div id="f1_card" class="shadow">
                             <div class="front face">
-                                <img src="/src/sample/9.png"/>
+                                <img class="img-responsive" src="/src/sample/9.png"/>
                             </div>
                             <div class="back face center">
-                                
+
                                 <p>Any content can go here.</p>
                             </div>
                         </div>
@@ -318,14 +318,14 @@ $this->title = 'Logos';
                     <div id="f1_container">
                         <div id="f1_card" class="shadow">
                             <div class="front face">
-                                <img src="/src/sample/10.png"/>
+                                <img class="img-responsive" src="/src/sample/10.png"/>
                             </div>
                             <div class="back face center">
-                                
+
                                 <p>Any content can go here.</p>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
 
                 </div>
             </div>
