@@ -9,53 +9,65 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 
+
 <style>
-    .parent {
-        min-height: 150px; /* если дочерний элемент будет выше родителя, то родитель увеличится на необходимую высоту. При необходимости заменить на height */
-        background: #E7D5C0;
-        text-align: center;
+
+    #f1_container {
+        position: relative;
+        margin: 10px auto;
+        width: 230px;
+        height: 230px;
+        z-index: 1;
     }
-    .parent div {
-        max-width: 300px; /* не обязательно */
-        width: 100%; /* не обязательно */
-        height: 100px; /* не обязательно */
-        background: #fff5d7; /* не обязательно */
-        text-align: left; /* не обязательно */
-        display: inline-block;
-        vertical-align: middle;
+    #f1_container {
+        perspective: 1000;
     }
-    .parent:before {
-        content: "";
-        display: inline-block;
-        min-height: inherit;
+    #f1_card {
+        width: 100%;
         height: 100%;
-        vertical-align: middle;
+        transform-style: preserve-3d;
+        transition: all 0.5s linear;
     }
+    #f1_container:hover #f1_card {
+        transform: rotateY(180deg);
+        box-shadow: -5px 5px 5px #aaa;
+    }
+    .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+    .face.back {
+        display: block;
+        transform: rotateY(180deg);
+        box-sizing: border-box;
+        padding: 10px;
+        color: white;
+        text-align: center;
+        background-color: #aaa;
+    }
+
 </style>
 
-<div class="parent">
-    <div class="">
-        <div class="get-logo-text-header">
-            Get your custom logo designed
-        </div>
 
-        <div class="get-logo-text-price">
-            <div class="">
-                for only
-            </div>
-            <div class="bold">
-                199.99$
-            </div>
-        </div>
 
-        <div class="get-logo-buttons">
-            <button type="button" class="btn-primary">Our Works</button>
-            <button type="button" class="btn-primary">Fill a Brief</button>
-        </div>
 
-        <div class="under-line">
-            <a href="">see terms and pricing here</a>
-        </div>
 
+
+<div id="f1_container">
+    <div id="f1_card" class="shadow">
+        <div class="front face">
+            <img src="/src/sample/2.png"/>
+        </div>
+        <div class="back face center">
+            <p>This is nice for exposing more information about an image.</p>
+            <p>Any content can go here.</p>
+        </div>
     </div>
 </div>
+
+
+<script>
+    document.querySelector("#myCard").classList.toggle("flip")
+</script>
