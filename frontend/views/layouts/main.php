@@ -74,7 +74,38 @@ AppAsset::register($this);
 <footer>
     <div class="footer-main">
         <div class="container">
+            <div class="row footer-main-cont">
+                <div class="col-sm-2 col-sm-offset-1 no-pad">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Design Guide</a></li>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
 
+                <div class="col-sm-5">
+                    <div class="logotype">
+                        Logotype
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="social">
+                        <div class="pic facebook"></div>
+                        <div class="pic linkedin"></div>
+                        <div class="pic twitter"></div>
+                        <div class="pic last pint"></div>
+                        <div class="social-text">
+                            <div>Have Questions?</div>
+                            <div>Fell Free To <a href="#">Contact Us</a></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
     </div>
 
