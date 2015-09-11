@@ -37,6 +37,12 @@ body {
     font-weight: 700;
 }
 
+.pic{
+    width:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 
 
@@ -160,19 +166,20 @@ a.desc:after {
         margin-top: 51px;
         background-color: #dfdfd7;
         background-image: url("/src/get-logo.png");
-        height: 360px;
+        min-height: 360px;
         color: #336699;
         /*padding-top: 80px;*/
     }
 
     .get-logo-cont{
         height: 100%;
+        padding: 50px 0 40px;
         /*background-color: #f1f1f1;*/
 
     }
 
     .get-logo-text-header{
-        margin-top: 50px;
+        /*margin-top: 50px;*/
 
         text-transform: capitalize;
         font-size: 35px;
@@ -180,7 +187,7 @@ a.desc:after {
     }
 
     .get-logo-slider{
-        margin-top: 120px;
+        margin-top: 70px;
 
         height: 100px;
         /*background-color: #232323;*/
@@ -235,26 +242,23 @@ a.desc:after {
         text-align: center;
     }
 
-    .sugg-item-pic{
+    .sugg-item .pic{
         height: 37px;
-        width:100%;
-        background-repeat: no-repeat;
-        background-position: center;
     }
 
-    .sugg-item-pic.brief{
+    .sugg-item .pic.brief{
         background-image: url("/src/icons/brief.png");
     }
 
-    .sugg-item-pic.create{
+    .sugg-item .pic.create{
         background-image: url("/src/icons/create.png");
     }
 
-    .sugg-item-pic.revise{
+    .sugg-item .pic.revise{
         background-image: url("/src/icons/revise.png");
     }
 
-    .sugg-item-pic.final{
+    .sugg-item .pic.final{
         background-image: url("/src/icons/final.png");
     }
 
@@ -283,7 +287,7 @@ a.desc:after {
         margin-top: 35px;
         background-color: #dfdfd7;
         background-image: url("/src/browse-cat.png");
-        height: 360px;
+        min-height: 360px;
     }
 
     .browse-cat-list{
@@ -335,7 +339,7 @@ a.desc:after {
 
     .sample{
         background-color: #eeeeee;
-        height: 540px;
+        min-height: 540px;
     }
 
     .sample_cont{
@@ -345,3 +349,118 @@ a.desc:after {
 
 
 /*---------------------------------------------------------------------------*/
+
+
+/*-------------------------- CHOOSE US ---------------------------------------*/
+
+
+
+    .choose-us{
+        background-color: #ffffff;
+        min-height: 280px;
+    }
+
+    .choos-us-cont{
+        padding: 60px 15px 0;
+    }
+
+    .choose-item{
+        text-align: center;
+    }
+
+    .choose-item .pic{
+        height: 92px ;
+        margin-bottom: 30px;
+    }
+
+    .choose-item .pic.quality{
+        background-image: url("/src/icons/1.png");
+    }
+    .choose-item .pic.time{
+        background-image: url("/src/icons/2.png");
+    }
+    .choose-item .pic.revise{
+        background-image: url("/src/icons/4.png");
+    }
+    .choose-item .pic.final{
+        background-image: url("/src/icons/3.png");
+    }
+
+
+    .choose-item-text{
+        max-width: 200px;
+        margin: 0 auto;
+        color: #336699;
+        font-weight: 600;
+
+    }
+
+
+
+
+/*-----------------------------------------------------------------------------*/
+
+
+/*------------------------------ FOOTER ---------------------------------------*/
+
+
+    footer{
+        min-height: 380px;
+    }
+
+    .footer-main{
+        background-color: #353535;
+        min-height: 300px;
+    }
+
+    .footer-extra{
+        background-color: #2c2c2c;
+        min-height: 80px ;
+    }
+
+    .footer-extra-text{
+        padding-top: 10px;
+        text-align: right;
+        color: #eeeeee;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -71,13 +71,36 @@ AppAsset::register($this);
         <?= $content ?>
 </div>
 
-<footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+<footer>
+    <div class="footer-main">
+        <div class="container">
 
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        </div>
     </div>
+
+    <div class="footer-extra">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-11 footer-extra-text">
+                    <div class="">
+                        support@gmail.com
+                    </div>
+                    <div class="">
+                        tel.: 8-921-636-98-77
+                    </div>
+                    <div class="">
+                        www.mysite.com &copy; 2015 All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </footer>
+
+
+
+
 
 <?php $this->endBody() ?>
 </body>
