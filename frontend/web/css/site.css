@@ -159,7 +159,10 @@ a.desc:after {
         background-color: aliceblue;
 
     }
-
+    .nav > li > a:hover, .nav > li > a:focus {
+        text-decoration: none;
+        background-color: #086496;
+    }
 
 /*-----------------------------------------------------------------------*/
 
@@ -189,7 +192,7 @@ a.desc:after {
         /*margin-top: 50px;*/
 
         text-transform: capitalize;
-        font-size: 35px;
+        /*font-size: 35px;*/
 
     }
 
@@ -402,14 +405,18 @@ a.desc:after {
             backface-visibility: hidden;
         }
         .face.back {
-            font-size: 14px;
+            font-size: 17px;
             display: block;
             transform: rotateY(180deg);
             box-sizing: border-box;
             /*padding: 10px;*/
             color: white;
             text-align: center;
-            background-color: #aaa;
+            background-color: #DAE8CC;
+        }
+
+        .face.back p{
+            margin-top: 45%;
         }
         /*-----------------------------------*/
 

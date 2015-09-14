@@ -58,7 +58,7 @@ $this->title = 'Logos';
 
                      <div class="col-sm-offset-1 col-sm-7 get-logo-text">
                          <div class="get-logo-text-header">
-                             Get your custom logo designed
+                             <h1>Get your custom logo designed</h1>
                          </div>
 
                          <div class="get-logo-text-price">
@@ -153,7 +153,7 @@ $this->title = 'Logos';
                 <div class="col-sm-5">
                     <div class="browse-cat-header">
                         <div class="text-capitalize">
-                            Pick it up from our library
+                            <h2>Pick it up from our library</h2>
                         </div>
                         <div class="">
                             for
