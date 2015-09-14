@@ -87,7 +87,7 @@ $this->title = 'Logos';
     <div class="suggestion">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3 sugg-item">
+                <div class="col-sm-3 col-xs-12 sugg-item">
                     <div class="pic brief">
 
                     </div>
@@ -101,7 +101,7 @@ $this->title = 'Logos';
                     </div>
                 </div>
 
-                <div class="col-sm-3 sugg-item">
+                <div class="col-sm-3 col-xs-12 sugg-item">
                     <div class="pic create">
 
                     </div>
@@ -116,7 +116,7 @@ $this->title = 'Logos';
                     </div>
                 </div>
 
-                <div class="col-sm-3 sugg-item">
+                <div class="col-sm-3 col-xs-12 sugg-item">
                     <div class="pic revise">
 
                     </div>
@@ -130,7 +130,7 @@ $this->title = 'Logos';
                     </div>
                 </div>
 
-                <div class="col-sm-3 sugg-item">
+                <div class="col-sm-3 col-xs-12 sugg-item">
                     <div class="pic final">
 
                     </div>
@@ -205,7 +205,7 @@ $this->title = 'Logos';
         <div class="container">
             <div class="">
                 <div class="sample_cont clearfix">
-                    <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/1.png" alt=""/></div>
+                    <!--<div class="sample-logo pic"><img class="img-responsive" src="/src/sample/1.png" alt=""/></div>
                     <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/2.png" alt=""/></div>
                     <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/3.png" alt=""/></div>
                     <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/4.png" alt=""/></div>
@@ -215,118 +215,120 @@ $this->title = 'Logos';
                     <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/8.png" alt=""/></div>
                     <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/9.png" alt=""/></div>
                     <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/10.png" alt=""/></div>
+-->
 
-                    <!--<div id="f1_container">
-                        <div id="f1_card" class="shadow">
-                            <div class="front face">
-                                <img class="img-responsive" src="/src/sample/1.png"/>
+                    <div class="clearfix" style="font-size: 0">
+                        <div id="f1_container">
+                            <div id="f1_card" class="shadow">
+                                <div class="front face">
+                                    <img class="img-responsive" src="/src/sample/1.png"/>
+                                </div>
+                                <div class="back face center">
+
+                                    <p>Any content can go here.</p>
+                                </div>
                             </div>
-                            <div class="back face center">
+                        </div>
+                        <div id="f1_container">
+                            <div id="f1_card" class="shadow">
+                                <div class="front face">
+                                    <img class="img-responsive" src="/src/sample/2.png"/>
+                                </div>
+                                <div class="back face center">
 
-                                <p>Any content can go here.</p>
+                                    <p>Any content can go here.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="f1_container">
+                            <div id="f1_card" class="shadow">
+                                <div class="front face">
+                                    <img class="img-responsive" src="/src/sample/3.png"/>
+                                </div>
+                                <div class="back face center">
+
+                                    <p>Any content can go here.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="f1_container">
+                            <div id="f1_card" class="shadow">
+                                <div class="front face">
+                                    <img class="img-responsive" src="/src/sample/4.png"/>
+                                </div>
+                                <div class="back face center">
+
+                                    <p>Any content can go here.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="f1_container">
+                            <div id="f1_card" class="shadow">
+                                <div class="front face">
+                                    <img class="img-responsive" src="/src/sample/5.png"/>
+                                </div>
+                                <div class="back face center">
+
+                                    <p>Any content can go here.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="f1_container">
+                            <div id="f1_card" class="shadow">
+                                <div class="front face">
+                                    <img class="img-responsive" src="/src/sample/6.png"/>
+                                </div>
+                                <div class="back face center">
+
+                                    <p>Any content can go here.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="f1_container">
+                            <div id="f1_card" class="shadow">
+                                <div class="front face">
+                                    <img class="img-responsive" src="/src/sample/7.png"/>
+                                </div>
+                                <div class="back face center">
+
+                                    <p>Any content can go here.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="f1_container">
+                            <div id="f1_card" class="shadow">
+                                <div class="front face">
+                                    <img class="img-responsive" src="/src/sample/8.png"/>
+                                </div>
+                                <div class="back face center">
+
+                                    <p>Any content can go here.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="f1_container">
+                            <div id="f1_card" class="shadow">
+                                <div class="front face">
+                                    <img class="img-responsive" src="/src/sample/9.png"/>
+                                </div>
+                                <div class="back face center">
+
+                                    <p>Any content can go here.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="f1_container">
+                            <div id="f1_card" class="shadow">
+                                <div class="front face">
+                                    <img class="img-responsive" src="/src/sample/10.png"/>
+                                </div>
+                                <div class="back face center">
+
+                                    <p>Any content can go here.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div id="f1_container">
-                        <div id="f1_card" class="shadow">
-                            <div class="front face">
-                                <img class="img-responsive" src="/src/sample/2.png"/>
-                            </div>
-                            <div class="back face center">
-
-                                <p>Any content can go here.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="f1_container">
-                        <div id="f1_card" class="shadow">
-                            <div class="front face">
-                                <img class="img-responsive" src="/src/sample/3.png"/>
-                            </div>
-                            <div class="back face center">
-
-                                <p>Any content can go here.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="f1_container">
-                        <div id="f1_card" class="shadow">
-                            <div class="front face">
-                                <img class="img-responsive" src="/src/sample/4.png"/>
-                            </div>
-                            <div class="back face center">
-
-                                <p>Any content can go here.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="f1_container">
-                        <div id="f1_card" class="shadow">
-                            <div class="front face">
-                                <img class="img-responsive" src="/src/sample/5.png"/>
-                            </div>
-                            <div class="back face center">
-
-                                <p>Any content can go here.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="f1_container">
-                        <div id="f1_card" class="shadow">
-                            <div class="front face">
-                                <img class="img-responsive" src="/src/sample/6.png"/>
-                            </div>
-                            <div class="back face center">
-
-                                <p>Any content can go here.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="f1_container">
-                        <div id="f1_card" class="shadow">
-                            <div class="front face">
-                                <img class="img-responsive" src="/src/sample/7.png"/>
-                            </div>
-                            <div class="back face center">
-
-                                <p>Any content can go here.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="f1_container">
-                        <div id="f1_card" class="shadow">
-                            <div class="front face">
-                                <img class="img-responsive" src="/src/sample/8.png"/>
-                            </div>
-                            <div class="back face center">
-
-                                <p>Any content can go here.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="f1_container">
-                        <div id="f1_card" class="shadow">
-                            <div class="front face">
-                                <img class="img-responsive" src="/src/sample/9.png"/>
-                            </div>
-                            <div class="back face center">
-
-                                <p>Any content can go here.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="f1_container">
-                        <div id="f1_card" class="shadow">
-                            <div class="front face">
-                                <img class="img-responsive" src="/src/sample/10.png"/>
-                            </div>
-                            <div class="back face center">
-
-                                <p>Any content can go here.</p>
-                            </div>
-                        </div>
-                    </div>-->
-
                 </div>
             </div>
         </div>
@@ -334,8 +336,8 @@ $this->title = 'Logos';
 
     <div class="choose-us">
         <div class="container">
-            <div class="row choos-us-cont">
-                <div class="col-sm-3 choose-item">
+            <div class="row choose-us-cont">
+                <div class="col-sm-3 col-xs-12 choose-item">
                     <div class="pic quality">
 
                     </div>
@@ -344,7 +346,7 @@ $this->title = 'Logos';
                     </div>
                 </div>
 
-                <div class="col-sm-3 choose-item">
+                <div class="col-sm-3 col-xs-12 choose-item">
                     <div class="pic time">
 
                     </div>
@@ -354,7 +356,7 @@ $this->title = 'Logos';
                     </div>
                 </div>
 
-                <div class="col-sm-3 choose-item">
+                <div class="col-sm-3 col-xs-12 choose-item">
                     <div class="pic revise">
 
                     </div>
@@ -363,7 +365,7 @@ $this->title = 'Logos';
                     </div>
                 </div>
 
-                <div class="col-sm-3 choose-item">
+                <div class="col-sm-3 col-xs-12 choose-item">
                     <div class="pic final">
 
                     </div>
