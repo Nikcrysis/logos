@@ -46,11 +46,11 @@ $this->title = 'Logos';
 
                              <!-- Controls -->
                              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                 <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
                                  <span class="sr-only">Previous</span>
                              </a>
                              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                 <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
                                  <span class="sr-only">Next</span>
                              </a>
                          </div>
@@ -224,8 +224,9 @@ $this->title = 'Logos';
                                     <img class="img-responsive" src="/src/sample/1.png"/>
                                 </div>
                                 <div class="back face center">
-
-                                    <p>Any content can go here.</p>
+                                    <img class="img-responsive" src="/src/sample/1.png"/>
+                                    <h3>Buy now</h3>
+                                    <p>for free*</p>
                                 </div>
                             </div>
                         </div>
@@ -234,9 +235,11 @@ $this->title = 'Logos';
                                 <div class="front face">
                                     <img class="img-responsive" src="/src/sample/2.png"/>
                                 </div>
-                                <div class="back face center">
-
-                                    <p>Any content can go here.</p>
+                               <div class="back face center">
+                                   <img class="img-responsive" src="/src/sample/2.png"/>
+                                    <h3>Buy now</h3>
+                                    <p>for free*</p>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -245,9 +248,11 @@ $this->title = 'Logos';
                                 <div class="front face">
                                     <img class="img-responsive" src="/src/sample/3.png"/>
                                 </div>
-                                <div class="back face center">
-
-                                    <p>Any content can go here.</p>
+                               <div class="back face center">
+                                   <img class="img-responsive" src="/src/sample/3.png"/>
+                                    <h3>Buy now</h3>
+                                    <p>for free*</p>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -256,9 +261,11 @@ $this->title = 'Logos';
                                 <div class="front face">
                                     <img class="img-responsive" src="/src/sample/4.png"/>
                                 </div>
-                                <div class="back face center">
-
-                                    <p>Any content can go here.</p>
+                               <div class="back face center">
+                                   <img class="img-responsive" src="/src/sample/4.png"/>
+                                    <h3>Buy now</h3>
+                                    <p>for free*</p>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -267,9 +274,11 @@ $this->title = 'Logos';
                                 <div class="front face">
                                     <img class="img-responsive" src="/src/sample/5.png"/>
                                 </div>
-                                <div class="back face center">
-
-                                    <p>Any content can go here.</p>
+                               <div class="back face center">
+                                   <img class="img-responsive" src="/src/sample/5.png"/>
+                                    <h3>Buy now</h3>
+                                    <p>for free*</p>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -278,9 +287,11 @@ $this->title = 'Logos';
                                 <div class="front face">
                                     <img class="img-responsive" src="/src/sample/6.png"/>
                                 </div>
-                                <div class="back face center">
-
-                                    <p>Any content can go here.</p>
+                               <div class="back face center">
+                                   <img class="img-responsive" src="/src/sample/6.png"/>
+                                    <h3>Buy now</h3>
+                                    <p>for free*</p>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -289,9 +300,11 @@ $this->title = 'Logos';
                                 <div class="front face">
                                     <img class="img-responsive" src="/src/sample/7.png"/>
                                 </div>
-                                <div class="back face center">
-
-                                    <p>Any content can go here.</p>
+                               <div class="back face center">
+                                   <img class="img-responsive" src="/src/sample/7.png"/>
+                                    <h3>Buy now</h3>
+                                    <p>for free*</p>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -300,9 +313,11 @@ $this->title = 'Logos';
                                 <div class="front face">
                                     <img class="img-responsive" src="/src/sample/8.png"/>
                                 </div>
-                                <div class="back face center">
-
-                                    <p>Any content can go here.</p>
+                               <div class="back face center">
+                                   <img class="img-responsive" src="/src/sample/8.png"/>
+                                    <h3>Buy now</h3>
+                                    <p>for free*</p>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -311,9 +326,11 @@ $this->title = 'Logos';
                                 <div class="front face">
                                     <img class="img-responsive" src="/src/sample/9.png"/>
                                 </div>
-                                <div class="back face center">
-
-                                    <p>Any content can go here.</p>
+                               <div class="back face center">
+                                   <img class="img-responsive" src="/src/sample/9.png"/>
+                                    <h3>Buy now</h3>
+                                    <p>for free*</p>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -322,9 +339,11 @@ $this->title = 'Logos';
                                 <div class="front face">
                                     <img class="img-responsive" src="/src/sample/10.png"/>
                                 </div>
-                                <div class="back face center">
-
-                                    <p>Any content can go here.</p>
+                               <div class="back face center">
+                                   <img class="img-responsive" src="/src/sample/10.png"/>
+                                    <h3>Buy now</h3>
+                                    <p>for free*</p>
+                                    
                                 </div>
                             </div>
                         </div>
