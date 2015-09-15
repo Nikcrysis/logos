@@ -397,7 +397,7 @@ a.desc:after {
     }
 
     .sample-btns{
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     .sample-logo{
@@ -477,6 +477,11 @@ a.desc:after {
 
 
         /*-------------- APPEAR -------------*/
+
+            #logotypes-cont{
+                animation-duration: 0.7s;
+            }
+
             #f1_container {
                 position: relative;
                 display: inline-block;

@@ -74,7 +74,14 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        if(!isset($_GET['cat'])) {
+        $cat='all';
+        } else{
+            $cat = $_GET['cat'];
+        }
+        return $this->render('index',[
+            'cat' => $cat,
+        ]);
     }
 
     /**
@@ -213,14 +220,6 @@ class SiteController extends Controller
         ]);
     }
 
-
-    public function actionGetLogos($cat){
-        return $this->renderPartial('logos', [
-            'cat' => $cat,
-        ]);
-
-
-    }
 
 
 

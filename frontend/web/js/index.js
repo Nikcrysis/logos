@@ -5,14 +5,13 @@
 
 
 $('#logotypes-btns button').click(function() {
-
-    //console.log($(this).val());
     $.ajax({
             type: 'GET',
-            url: '/site/get-logos',
+            url: '/site/index',
             data: 'cat=' + $(this).val(),
             success: function(data) {
-                $('#logotypes-cont').html(data);
+                var success =  $(data).find("#logotypes-cont").prop('outerHTML');
+                $('#logotypes-cont').parent().html(success );
     }
     });
 

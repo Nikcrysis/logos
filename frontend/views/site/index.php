@@ -10,7 +10,7 @@ $this->title = 'Logos';
 
 
 
-    <div class="get-logo">
+    <section class="get-logo">
         <div class="container">
             <div class="get-logo-cont">
                 <div class="row ">
@@ -85,9 +85,9 @@ $this->title = 'Logos';
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="suggestion">
+    <section class="suggestion">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3 col-xs-12 sugg-item">
@@ -148,9 +148,9 @@ $this->title = 'Logos';
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="browse-cat">
+    <section class="browse-cat">
         <div class="container">
             <div class="row browse-cat-row">
                 <div class="col-sm-5">
@@ -202,9 +202,9 @@ $this->title = 'Logos';
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="sample">
+    <section class="sample">
         <div class="container">
             <div class="">
                 <div class="sample_cont clearfix">
@@ -216,164 +216,92 @@ $this->title = 'Logos';
                         <button type="button" class="btn-primary" id="btn-5" value="travel"> Travel </button>
                     </div>
 
-
-
-
-
-                    <!--<div class="sample-logo pic"><img class="img-responsive" src="/src/sample/1.png" alt=""/></div>
-                    <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/2.png" alt=""/></div>
-                    <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/3.png" alt=""/></div>
-                    <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/4.png" alt=""/></div>
-                    <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/5.png" alt=""/></div>
-                    <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/6.png" alt=""/></div>
-                    <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/7.png" alt=""/></div>
-                    <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/8.png" alt=""/></div>
-                    <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/9.png" alt=""/></div>
-                    <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/10.png" alt=""/></div>
--->
-
-
-                   <div  id="logotypes-cont"  class="clearfix" style="font-size: 0">
-                       <?= LogoWidget::widget([
-                           'cat' => $cat,
-                       ]);
-                       ?>
-                        <!--<div id="f1_container">
-                            <div id="f1_card" class="shadow">
-                                <div class="front face">
-                                    <img class="img-responsive" src="/src/sample/1.png"/>
-                                </div>
-                                <div class="back face center">
-                                    <img class="img-responsive" src="/src/sample/1.png"/>
-                                    <h3>Buy now</h3>
-                                    <p>for free*</p>
-                                </div>
-                            </div>
+                    <div>
+                        <div  id="logotypes-cont"  class="clearfix animated fadeIn" style="font-size: 0">
+                           <?= LogoWidget::widget([
+                               'cat' => $cat,
+                           ]);
+                           ?>
                         </div>
-                        <div id="f1_container">
-                            <div id="f1_card" class="shadow">
-                                <div class="front face">
-                                    <img class="img-responsive" src="/src/sample/2.png"/>
-                                </div>
-                               <div class="back face center">
-                                   <img class="img-responsive" src="/src/sample/2.png"/>
-                                    <h3>Buy now</h3>
-                                    <p>for free*</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div id="f1_container">
-                            <div id="f1_card" class="shadow">
-                                <div class="front face">
-                                    <img class="img-responsive" src="/src/sample/3.png"/>
-                                </div>
-                               <div class="back face center">
-                                   <img class="img-responsive" src="/src/sample/3.png"/>
-                                    <h3>Buy now</h3>
-                                    <p>for free*</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div id="f1_container">
-                            <div id="f1_card" class="shadow">
-                                <div class="front face">
-                                    <img class="img-responsive" src="/src/sample/4.png"/>
-                                </div>
-                               <div class="back face center">
-                                   <img class="img-responsive" src="/src/sample/4.png"/>
-                                    <h3>Buy now</h3>
-                                    <p>for free*</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div id="f1_container">
-                            <div id="f1_card" class="shadow">
-                                <div class="front face">
-                                    <img class="img-responsive" src="/src/sample/5.png"/>
-                                </div>
-                               <div class="back face center">
-                                   <img class="img-responsive" src="/src/sample/5.png"/>
-                                    <h3>Buy now</h3>
-                                    <p>for free*</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div id="f1_container">
-                            <div id="f1_card" class="shadow">
-                                <div class="front face">
-                                    <img class="img-responsive" src="/src/sample/6.png"/>
-                                </div>
-                               <div class="back face center">
-                                   <img class="img-responsive" src="/src/sample/6.png"/>
-                                    <h3>Buy now</h3>
-                                    <p>for free*</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div id="f1_container">
-                            <div id="f1_card" class="shadow">
-                                <div class="front face">
-                                    <img class="img-responsive" src="/src/sample/7.png"/>
-                                </div>
-                               <div class="back face center">
-                                   <img class="img-responsive" src="/src/sample/7.png"/>
-                                    <h3>Buy now</h3>
-                                    <p>for free*</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div id="f1_container">
-                            <div id="f1_card" class="shadow">
-                                <div class="front face">
-                                    <img class="img-responsive" src="/src/sample/8.png"/>
-                                </div>
-                               <div class="back face center">
-                                   <img class="img-responsive" src="/src/sample/8.png"/>
-                                    <h3>Buy now</h3>
-                                    <p>for free*</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div id="f1_container">
-                            <div id="f1_card" class="shadow">
-                                <div class="front face">
-                                    <img class="img-responsive" src="/src/sample/9.png"/>
-                                </div>
-                               <div class="back face center">
-                                   <img class="img-responsive" src="/src/sample/9.png"/>
-                                    <h3>Buy now</h3>
-                                    <p>for free*</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div id="f1_container">
-                            <div id="f1_card" class="shadow">
-                                <div class="front face">
-                                    <img class="img-responsive" src="/src/sample/10.png"/>
-                                </div>
-                               <div class="back face center">
-                                   <img class="img-responsive" src="/src/sample/10.png"/>
-                                    <h3>Buy now</h3>
-                                    <p>for free*</p>
-                                    
-                                </div>
-                            </div>
-                        </div>-->
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="choose-us">
+  <!--  <section id="service" class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <h3 class="head-title text-center to_animate animated slideDown" data-animation="slideDown" style="opacity: 0;">Pricing Table</h3>
+                    <hr class="title-border">
+                    <p class="text-center to_animate animated fadeInUp" data-animation="fadeInUp" style="opacity: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-3 pricing-table to_animate animated fadeIn" data-animation="fadeIn" style="opacity: 0;">
+                    <div class="single-table">
+                        <h2>Starter</h2>
+                        <p class="price"><span class="dollar-icon">$</span><span>19</span> monthly</p>
+                        <ul>
+                            <li>5 Domain Names</li>
+                            <li>1GB Dedicated Ram</li>
+                            <li>5 Sub Domain</li>
+                            <li>10 Addon Domain</li>
+                            <li>24/7 Support</li>
+                        </ul>
+                        <a class="btn-signup" href="#">Sign-up</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 pricing-table to_animate animated fadeIn" data-animation="fadeIn" style="opacity: 0;">
+                    <div class="single-table">
+                        <h2>Business</h2>
+                        <p class="price"><span class="dollar-icon">$</span><span>129</span> monthly</p>
+                        <ul>
+                            <li>5 Domain Names</li>
+                            <li>1GB Dedicated Ram</li>
+                            <li>5 Sub Domain</li>
+                            <li>10 Addon Domain</li>
+                            <li>24/7 Support</li>
+                        </ul>
+                        <a class="btn-signup" href="#">Sign-up</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 pricing-table to_animate animated fadeIn" data-animation="fadeIn" style="opacity: 0;">
+                    <div class="single-table">
+                        <h2>Basic</h2>
+                        <p class="price"><span class="dollar-icon">$</span><span>49</span> monthly</p>
+                        <ul>
+                            <li>5 Domain Names</li>
+                            <li>1GB Dedicated Ram</li>
+                            <li>5 Sub Domain</li>
+                            <li>10 Addon Domain</li>
+                            <li>24/7 Support</li>
+                        </ul>
+                        <a class="btn-signup" href="#">Sign-up</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 pricing-table to_animate animated fadeIn" data-animation="fadeIn" style="opacity: 0;">
+                    <div class="single-table">
+                        <h2>Ultra</h2>
+                        <p class="price"><span class="dollar-icon">$</span><span>199</span> monthly</p>
+                        <ul>
+                            <li>5 Domain Names</li>
+                            <li>1GB Dedicated Ram</li>
+                            <li>5 Sub Domain</li>
+                            <li>10 Addon Domain</li>
+                            <li>24/7 Support</li>
+                        </ul>
+                        <a class="btn-signup" href="#">Sign-up</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>-->
+
+    <section class="choose-us">
         <div class="container">
             <div class="row choose-us-cont">
                 <div class="col-sm-3 col-xs-12 choose-item">
@@ -416,6 +344,6 @@ $this->title = 'Logos';
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

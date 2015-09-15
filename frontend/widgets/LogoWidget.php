@@ -21,7 +21,8 @@ class LogoWidget extends Widget
         }else{
             $query->select('path')
                 ->from('logotypes')
-                ->where(['category' => $this->cat]);
+                ->where(['category' => $this->cat])
+                ->limit(10);
         }
         $this->logos = $query->all();
 
