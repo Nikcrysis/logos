@@ -237,6 +237,7 @@ a.desc:after {
     }
 
     .carousel-control{
+        top: 35px;
         opacity: .7;
     }
 
@@ -341,6 +342,12 @@ a.desc:after {
         color: #ffffff;
         font-size: 35px;
     }
+
+    .browse-cat-header h2{
+        font-size: 35px;
+        margin-top: 0;
+    }
+
     .browse-cat-buttons{
         margin-top:40px ;
         text-align: center;
@@ -389,6 +396,10 @@ a.desc:after {
         margin: 40px auto;
     }
 
+    .sample-btns{
+        margin-bottom: 20px;
+    }
+
     .sample-logo{
         float: left;
         width:20%;
@@ -399,8 +410,7 @@ a.desc:after {
 
 
     /*-------------------- FLIP ---------------------*/
-        #f1_container {
-            /*float: left;*/
+        /*#f1_container {
             display: inline-block;
             width:228px;
             height: 225px;
@@ -433,7 +443,6 @@ a.desc:after {
             display: block;
             transform: rotateY(180deg);
             box-sizing: border-box;
-            /*padding: 10px;*/
             color: white;
             text-align: center;
             background-color: #fdfdfd;
@@ -442,7 +451,6 @@ a.desc:after {
         .face.back h3{
             position: relative;
             z-index: 10;
-            /*text-shadow: -2px 1px 0px #000000;*/
             text-transform: uppercase;
             margin-top: 85px;
             color: #232323;
@@ -453,20 +461,101 @@ a.desc:after {
         .face.back img{
             position: absolute;
             z-index: 5;
-            /*filter: gray; *//* IE6-9 */
+            filter: gray;  IE6-9;
             filter: grayscale(100%) saturate(10%) opacity(35%);
             -webkit-filter: grayscale(100%) saturate(10%) opacity(35%);
         }
 
 
         .face.back p{
-            /*text-shadow:-1px -2px 5px #000000;*/
             position: relative;
             z-index: 10;
             font-size: 21px;
             color: #878787;
-            /*margin-top: 45%;*/
-        }
+        }*/
+        /*-----------------------------------*/
+
+
+        /*-------------- APPEAR -------------*/
+            #f1_container {
+                position: relative;
+                display: inline-block;
+                width:228px;
+                height: 225px;
+                padding: 0;
+                margin: 0 auto;
+            }
+
+            #f1_card {
+                width: 100%;
+                height: 100%;
+            }
+
+            .face {
+                position: absolute;
+            }
+
+            .front.face{
+                z-index: 20;
+                transition: all 0.6s ease-out 0s;
+            }
+
+            .face.back {
+                width:228px;
+                height: 225px;
+                border: 10px solid #e9e9e9;
+                font-size: 17px;
+                display: block;
+                box-sizing: border-box;
+                color: white;
+                text-align: center;
+                background-color: #fdfdfd;
+            }
+
+            .face.back img{
+                position: absolute;
+                transition: all 0.3s ease-out 0s;
+                z-index: 5;
+                transform: scale(0.5);
+                filter: opacity(0%);
+                -webkit-filter: opacity(0%);
+
+            }
+
+            #f1_container:hover .face.back img{
+                z-index: 30;
+                transform: scale(1);
+                filter: gray;
+                filter: grayscale(100%) saturate(10%) opacity(35%);
+                -webkit-filter: grayscale(100%) saturate(10%) opacity(35%);
+            }
+
+            #f1_container:hover .front.face{
+                opacity: 0;
+            }
+
+
+            .face.back h3{
+            position: relative;
+            z-index: 10;
+            text-transform: uppercase;
+            margin-top: 85px;
+            color: #232323;
+            line-height: 19px;
+            margin-bottom: 0;
+            }
+
+
+
+
+            .face.back p{
+            position: relative;
+            z-index: 10;
+            font-size: 21px;
+            color: #878787;
+            }
+
+
         /*-----------------------------------*/
 
 
@@ -511,13 +600,12 @@ a.desc:after {
 
 
     .choose-item-text{
-        max-width: 200px;
+        max-width: 215px;
         min-height: 60px;
         margin: 0 auto;
         color: #336699;
         font-weight: 600;
-
-
+        font-size: 15px;
     }
 
 

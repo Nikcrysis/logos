@@ -12,6 +12,8 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use app\models\Logotypes;
+
 
 /**
  * Site controller
@@ -210,4 +212,16 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+
+
+    public function actionGetLogos($cat){
+        return $this->renderPartial('logos', [
+            'cat' => $cat,
+        ]);
+
+
+    }
+
+
+
 }

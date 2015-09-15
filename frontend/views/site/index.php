@@ -1,7 +1,10 @@
 <?php
 
-/* @var $this yii\web\View */
 
+use frontend\widgets\LogoWidget;
+
+/* @var $this yii\web\View */
+$this->registerJsFile('@web/js/index.js');
 $this->title = 'Logos';
 ?>
 
@@ -205,6 +208,18 @@ $this->title = 'Logos';
         <div class="container">
             <div class="">
                 <div class="sample_cont clearfix">
+                    <div id="logotypes-btns" class="sample-btns">
+                        <button type="button" class="btn-primary" id="btn-1" value="all"> All </button>
+                        <button type="button" class="btn-primary" id="btn-2" value="music"> Music </button>
+                        <button type="button" class="btn-primary" id="btn-3" value="science"> Science </button>
+                        <button type="button" class="btn-primary" id="btn-4" value="business"> Business</button>
+                        <button type="button" class="btn-primary" id="btn-5" value="travel"> Travel </button>
+                    </div>
+
+
+
+
+
                     <!--<div class="sample-logo pic"><img class="img-responsive" src="/src/sample/1.png" alt=""/></div>
                     <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/2.png" alt=""/></div>
                     <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/3.png" alt=""/></div>
@@ -217,8 +232,13 @@ $this->title = 'Logos';
                     <div class="sample-logo pic"><img class="img-responsive" src="/src/sample/10.png" alt=""/></div>
 -->
 
-                    <div class="clearfix" style="font-size: 0">
-                        <div id="f1_container">
+
+                   <div  id="logotypes-cont"  class="clearfix" style="font-size: 0">
+                       <?= LogoWidget::widget([
+                           'cat' => $cat,
+                       ]);
+                       ?>
+                        <!--<div id="f1_container">
                             <div id="f1_card" class="shadow">
                                 <div class="front face">
                                     <img class="img-responsive" src="/src/sample/1.png"/>
@@ -346,7 +366,7 @@ $this->title = 'Logos';
                                     
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -397,3 +417,5 @@ $this->title = 'Logos';
             </div>
         </div>
     </div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
