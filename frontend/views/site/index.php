@@ -229,17 +229,17 @@ $this->title = 'Logos';
         </div>
     </section>
 
-  <!--  <section id="service" class="">
+    <section id="" class="service">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-sm-offset-3">
-                    <h3 class="head-title text-center to_animate animated slideDown" data-animation="slideDown" style="opacity: 0;">Pricing Table</h3>
+                    <h3 class="head-title text-center animated slideInDown" data-animation="slideDown" >Pricing Table</h3>
                     <hr class="title-border">
-                    <p class="text-center to_animate animated fadeInUp" data-animation="fadeInUp" style="opacity: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.</p>
+                    <p class="text-center to_animate animated fadeInUp" data-animation="fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.</p>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" style="margin-top: 25px">
                 <div class="col-sm-6 col-md-3 pricing-table to_animate animated fadeIn" data-animation="fadeIn" style="opacity: 0;">
                     <div class="single-table">
                         <h2>Starter</h2>
@@ -299,7 +299,7 @@ $this->title = 'Logos';
             </div>
 
         </div>
-    </section>-->
+    </section>
 
     <section class="choose-us">
         <div class="container">

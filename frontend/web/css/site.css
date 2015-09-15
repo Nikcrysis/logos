@@ -501,6 +501,8 @@ a.desc:after {
             }
 
             .front.face{
+                width: 100%;
+                height: 100%;
                 z-index: 20;
                 transition: all 0.6s ease-out 0s;
             }
@@ -566,6 +568,87 @@ a.desc:after {
 
 /*---------------------------------------------------------------------------*/
 
+
+
+
+/*------------------------- PRICING TABLES -----------------------------------*/
+
+    .service{
+        background-color: aliceblue;
+    }
+
+    .pricing-table{
+        margin-bottom: 40px;
+    }
+
+    .single-table {
+        background-color: #fafafa;
+        margin-bottom: 10px;
+    }
+    .single-table h2 {
+        border-radius: 5px 5px 0 0;
+        background-color: #f2f2f2;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 23px;
+    }
+    .price {
+        background-color: #dedede;
+        font-size: 14px;
+        margin-bottom: 0;
+        padding: 9px 23px;
+    }
+    .price span.dollar-icon {
+        font-size: 16px;
+        font-weight: 400;
+        position: relative;
+        top: -5px;
+    }
+    .price span {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .single-table ul {
+        padding: 5px 23px;
+    }
+    .single-table ul li {
+        margin-top: 15px;
+        list-style: none;
+    }
+
+    .btn-signup {
+        background-color: #dedede;
+        border: medium none;
+        border-radius: 0;
+        color: #454545;
+        display: block;
+        font-weight: 700;
+        margin-bottom: 0;
+        margin-top: 40px;
+        padding: 10px 0;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius:0 0 5px 5px;
+    }
+
+    .btn-signup:hover {
+        color: #ffffff;
+        background-color:#1971aa;
+    }
+    .pricing-table:hover .single-table h2 {
+        background-color:#2b8bc9;
+        color: #fff;
+    }
+    .pricing-table:hover .price {
+        background-color: #1971aa;
+        color: #fff;
+    }
+    .pricing-table:hover .single-table{
+        background-color: #f2f2f2;
+    }
+
+
+/*----------------------------------------------------------------------------*/
 
 /*-------------------------- CHOOSE US ---------------------------------------*/
 
