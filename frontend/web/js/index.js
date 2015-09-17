@@ -4,11 +4,21 @@
 
 
 
-$('#logotypes-btns button').click(function() {
+$('.sample_cont  button').click(function() {
+    var cat = $(this).val();
+
+    if ($(this).attr('id') == 'custom-btn'){
+        if ($('#custom-cat').val() != null){
+            cat = $('#custom-cat').val();
+        } else{
+            cat = 'all';
+        }
+    }
+
     $.ajax({
             type: 'GET',
             url: '/site/index',
-            data: 'cat=' + $(this).val(),
+            data: 'cat=' + cat,
             success: function(data) {
                 var success =  $(data).find("#logotypes-cont").prop('outerHTML');
                 $('#logotypes-cont').parent().html(success );
@@ -19,3 +29,14 @@ $('#logotypes-btns button').click(function() {
 
 
 });
+
+
+$("#custom-cat").keypress(function(event){
+    if(event.keyCode == 13){
+        event.preventDefault();
+        $("#custom-btn").click();
+    }
+});
+
+
+

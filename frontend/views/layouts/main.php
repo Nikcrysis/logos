@@ -35,7 +35,7 @@ AppAsset::register($this);
         ],
     ]);
     $menuItems = [
-        ['label' => 'Library', 'url' => ['/site/index']],
+        ['label' => 'Library', 'url' => ['/logos']],
         ['label' => 'Design', 'url' => ['/site/about']],
         ['label' => 'How it works', 'url' => ['/site/contact']],
     ];
@@ -62,6 +62,8 @@ AppAsset::register($this);
 
     NavBar::end();
     ?>
+
+    <div class="nav--block-fix" style="height: 51px"></div>
 
 
         <?= Breadcrumbs::widget([
@@ -127,6 +129,7 @@ AppAsset::register($this);
     </div>
 
 </footer>
+
 
 
 

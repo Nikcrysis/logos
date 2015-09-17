@@ -11,6 +11,7 @@ use Yii;
  * @property string $name
  * @property string $category
  * @property string $path
+ * @property string $path_230
  */
 class Logotypes extends \yii\db\ActiveRecord
 {
@@ -29,7 +30,7 @@ class Logotypes extends \yii\db\ActiveRecord
     {
         return [
             [['name', 'category', 'path'], 'required'],
-            [['name'], 'string', 'max' => 25],
+            [['name'], 'string', 'max' => 255],
             [['category'], 'string', 'max' => 50],
             [['path'], 'string', 'max' => 225]
         ];

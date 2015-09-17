@@ -8,8 +8,8 @@ body {
 .wrap {
     min-height: 100%;
     height: auto;
-    margin: 0 auto -60px;
-    padding: 0 0 60px;
+    margin: 0 auto -380px;
+    padding: 0 0 380px;
 }
 
 .wrap > .container {
@@ -55,7 +55,6 @@ body {
     color: #ffffff;
     border-radius: 4px;
     border: 1px solid #357ebc;
-    padding: 12px 25px;
     font-weight: 700;
 }
 
@@ -68,6 +67,13 @@ body {
     background-color: #f5f5f5;
     border-top: 1px solid #ddd;
     padding-top: 20px;
+}
+
+
+
+.breadcrumb{
+    max-width: 1170px;
+    margin: 20px auto 0;
 }
 
 .jumbotron {
@@ -164,6 +170,13 @@ a.desc:after {
         background-color: #003366;
     }
 
+    /*.navbar-fixed-top + section{
+        margin-top: 51px;
+    }
+*/
+
+
+
 /*-----------------------------------------------------------------------*/
 
 .col-sm-1{
@@ -173,7 +186,7 @@ a.desc:after {
 /*-------------------------------------- GET LOGO ------------------------*/
 
     .get-logo{
-        margin-top: 51px;
+        /*margin-top: 51px;*/
         background-color: #dfdfd7;
         background-image: url("/src/get-logo.png");
         background-size:cover;
@@ -397,6 +410,7 @@ a.desc:after {
     }
 
     .sample-btns{
+        float: left;
         margin-bottom: 40px;
     }
 
@@ -406,6 +420,8 @@ a.desc:after {
         padding: 0;
         margin: 0;
     }
+
+
 
 
 
@@ -503,6 +519,7 @@ a.desc:after {
             .front.face{
                 width: 100%;
                 height: 100%;
+                overflow: hidden;
                 z-index: 20;
                 transition: all 0.6s ease-out 0s;
             }
@@ -510,9 +527,9 @@ a.desc:after {
             .face.back {
                 width:228px;
                 height: 225px;
-                border: 10px solid #e9e9e9;
+                /*border: 10px solid #e9e9e9;*/
                 font-size: 17px;
-                display: block;
+                display: none;
                 box-sizing: border-box;
                 color: white;
                 text-align: center;
@@ -521,12 +538,16 @@ a.desc:after {
 
             .face.back img{
                 position: absolute;
-                transition: all 0.3s ease-out 0s;
+                transition: all 0.6s ease-out 0s;
                 z-index: 5;
-                transform: scale(0.5);
+                transform: scale(0.3);
                 filter: opacity(0%);
                 -webkit-filter: opacity(0%);
 
+            }
+
+            #f1_container:hover .face.back{
+                display: block;
             }
 
             #f1_container:hover .face.back img{
@@ -795,16 +816,100 @@ a.desc:after {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*------------------------------------------------------------------------------*/
 
+
+
+
+/*-------------------------------- UPLOAD ---------------------------------------*/
+
+    .upload{
+        padding: 20px 0 ;
+    }
+
+
+    .dropzone{
+        text-align: center;
+    }
+
+    .dropzone button{
+        margin-top: 0;
+        padding: 0 5px;
+    }
+
+    .dz-details{
+        margin-bottom: 10px !important;
+    }
+
+    .dz-size{
+        position: relative !important;
+        top:5px;
+    }
+
+
+
+    .upload input{
+        margin: 0 auto;
+        display: block;
+    }
+
+    .upload button{
+        margin-top: 20px;
+        position: relative;
+        /*left:3px;*/
+    }
+
+    .upload-btn-cont{
+        width:200px;
+        margin: 20px auto 0;
+        text-align: center;
+    }
+
+
+
+/*-------------------------------------------------------------------------------*/
+
+
+/*---------------------------- VIEW ---------------------------------------------*/
+
+    .view table {
+        margin-top: 40px;
+    }
+
+    .view table tr td{
+        max-width: 300px;
+        border: 1px solid gray;
+        padding: 20px 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------*/

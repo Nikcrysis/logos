@@ -16,16 +16,18 @@ class LogoWidget extends Widget
 
         $query = new Query;
         if ($this->cat == 'all' or $this->cat == null){
-            $query->select('path')
-                ->from('logotypes');
-        }else{
-            $query->select('path')
+            $query->select('path, path_230')
                 ->from('logotypes')
-                ->where(['category' => $this->cat])
-                ->limit(10);
+                ->limit(15);
+        }else{
+            $query->select('path, path_230')
+                ->from('logotypes')
+                ->limit(15)
+                ->where(['category' => $this->cat]);
         }
-        $this->logos = $query->all();
-
+        $logos = $query->all();
+        shuffle($logos);
+        $this->logos = $logos;
     }
 
     public function run()
