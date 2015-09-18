@@ -39,9 +39,13 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'id',
             'name',
-            'category',
+            [
+                'label' => 'Category',
+                'value' => $model->cat->name,
+            ],
             'path',
             'path_230',
+
         ],
     ]) ?>
             <div class="text-center">

@@ -410,7 +410,8 @@ a.desc:after {
     }
 
     .sample-btns{
-        float: left;
+        /*float: left;*/
+        text-align: left;
         margin-bottom: 40px;
     }
 

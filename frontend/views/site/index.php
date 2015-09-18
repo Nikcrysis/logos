@@ -214,14 +214,14 @@ $this->title = 'Logos';
             <div class="">
                 <div class="sample_cont clearfix">
                     <div class="clearfix">
-                        <div id="logotypes-btns" class="sample-btns">
+                        <div id="logotypes-btns" class="sample-btns col-sm-9">
                             <button type="button" class="btn-primary" id="btn-1" value="all"> All </button>
                             <button type="button" class="btn-primary" id="btn-2" value="auto"> Auto </button>
                             <button type="button" class="btn-primary" id="btn-3" value="animals"> Animals </button>
                             <button type="button" class="btn-primary" id="btn-4" value="business"> Business</button>
                             <button type="button" class="btn-primary" id="btn-5" value="abstract"> Abstract </button>
                         </div>
-                        <div class="" style="float: right">
+                        <div class="col-sm-3 text-right" style="">
                             <input type="text" id="custom-cat" placeholder="Or select your category!"/>
                             <button type="button" class="btn-primary" id="custom-btn">Show!</button>
                         </div>

@@ -1,6 +1,13 @@
 <?php
 $this->registerJsFile('@web/js/dropzone.js');
 $this->registerCssFile('@web/css/dropzone.css');
+
+
+
+
+$this->title = 'Upload';
+$this->params['breadcrumbs'][] = ['label' => 'Logotypes', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <section class="upload">

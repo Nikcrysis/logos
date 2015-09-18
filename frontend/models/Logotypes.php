@@ -3,13 +3,14 @@
 namespace app\models;
 
 use Yii;
+use app\models\Category;
 
 /**
  * This is the model class for table "logotypes".
  *
  * @property integer $id
  * @property string $name
- * @property string $category
+ * @property integer $category
  * @property string $path
  * @property string $path_230
  */
@@ -29,9 +30,9 @@ class Logotypes extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'category', 'path'], 'required'],
-            [['name'], 'string', 'max' => 255],
-            [['category'], 'string', 'max' => 50],
+            [['name', 'category', 'path', 'path_230'], 'required'],
+            [['category'], 'integer'],
+            [['name', 'path_230'], 'string', 'max' => 255],
             [['path'], 'string', 'max' => 225]
         ];
     }
@@ -46,6 +47,13 @@ class Logotypes extends \yii\db\ActiveRecord
             'name' => 'Name',
             'category' => 'Category',
             'path' => 'Path',
+            'path_230' => 'Path 230',
         ];
     }
+
+
+    public function getCat(){
+        return $this->hasOne(Category::className(), ['id' => 'category']);
+    }
+
 }

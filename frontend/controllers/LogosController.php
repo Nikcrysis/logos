@@ -4,6 +4,7 @@ namespace frontend\controllers;
 use Yii;
 use yii\web\Controller;
 use app\models\Logotypes;
+use app\models\Category;
 use yii\db\Query;
 use yii\data\Pagination;
 use yii\data\ActiveDataProvider;
@@ -128,6 +129,7 @@ class LogosController extends Controller
         imagejpeg($tci, $newcopy, 90);
     }
 
+
     public function actionUpload()
     {
 
@@ -136,6 +138,21 @@ class LogosController extends Controller
             $cat = $_POST['cat'];
         }else{
             $cat = 'none';
+        }
+
+        $category = Category::findOne(['name' => $cat]);
+        if($category == null){
+            $cat_row = new Category();
+            $cat_row->name = $cat;
+            if ($cat_row->save()) {
+                //echo \yii\helpers\Json::encode($cat_row);
+                $cat = $cat_row->id;
+            } else {
+                echo 'failed to create row';
+                //echo $logo->errors();
+            }
+        }else{
+            $cat = $category->id;
         }
 
 
@@ -182,6 +199,9 @@ class LogosController extends Controller
 
                         //Now save file data to database
                         $logo = new Logotypes();
+
+
+
 
                         $logo->name = $file->name;
                         $logo->category = $cat;

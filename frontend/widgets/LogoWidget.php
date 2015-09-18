@@ -20,10 +20,22 @@ class LogoWidget extends Widget
                 ->from('logotypes')
                 ->limit(15);
         }else{
+
+            $query_cat = new Query;
+            $query_cat->select('id')
+                ->from('category')
+                ->where([ 'name' => $this->cat]);
+
+            $cat_id = $query_cat->all()[0]['id'];
+
+
+
             $query->select('path, path_230')
                 ->from('logotypes')
                 ->limit(15)
-                ->where(['category' => $this->cat]);
+                ->where([
+                    'category' => $cat_id
+                ]);
         }
         $logos = $query->all();
         shuffle($logos);
@@ -35,5 +47,6 @@ class LogoWidget extends Widget
         return $this->render('logos', [
           'logos' => $this->logos,
         ]);
+
     }
 }
