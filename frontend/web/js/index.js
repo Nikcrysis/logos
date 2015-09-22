@@ -40,7 +40,19 @@ $("#custom-cat").keypress(function(event){
 
 
 
-$("#custom-cat").on('change', function(){
+$(".arrow").on('click', function(){
+    var ask = $(".ask");
+    if (ask.hasClass('collapsed')){
+        ask.addClass('expanded');
+        ask.removeClass('collapsed');
+        $(".arrow").children('.glyphicon').addClass('glyphicon-triangle-right');
+        $(".arrow").children('.glyphicon').removeClass('glyphicon-triangle-left');
+    } else{
+        ask.addClass('collapsed');
+        ask.removeClass('expanded');
+        $(".arrow").children('.glyphicon').addClass('glyphicon-triangle-left');
+        $(".arrow").children('.glyphicon').removeClass('glyphicon-triangle-right');
+    };
 
 
 

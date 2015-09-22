@@ -48,8 +48,6 @@ body {
 
 
 
-
-
 .btn-primary{
     background-color: #428bca;
     color: #ffffff;
@@ -885,29 +883,82 @@ a.desc:after {
 
 
 
+/*-------------------------------------------------------------------------------*/
 
 
+/*-------------------------------- ASK ------------------------------------------*/
 
 
+    .ask{
+        -webkit-transition: 0.4s ease all;
+        -moz-transition: 0.4s ease-in all;
+        -ms-transition: 0.4s ease-in all;
+        -o-transition: 0.4s ease-in all;
+        transition: 0.4s ease-in all;
 
 
+        width: 280px;
+        height: 370px;
+        top:500px;
+        right: -260px;
+        position: fixed;
+        text-align: center;
+    }
+
+    .ask.collapsed{
+        right: -255px;
+    }
+
+    .ask.expanded{
+        right: 10px;
+    }
+
+    .ask .left{
+        height: 370px;
+        /*width: 30px;*/
+        cursor: pointer;
+        background: transparent;
+        float: left;
+    }
 
 
+    .ask .right{
+        position: relative;
+        float: right;
+        height: 370px;
+        width: 245px;
+        padding: 0 20px;
+        border-radius: 4px;
+        background-color: #c0c0c0;
+        opacity: 0.95;
+
+    }
+
+    .ask .arrow{
+        position: absolute;
+        padding: 5px;
+        background-color: aliceblue;
+        border: 1px solid #dcdcdc;
+        border-radius: 4px;
+    }
+
+    .ask .arrow span{
+        display: block;
+    }
 
 
+    .ask #chat-area{
+        height: 120px;
+        overflow: auto;
+        padding-right: 20px;
+        text-align: left;
+        background-color: #ffffff;
 
+    }
 
-
-
-
-
-
-
-
-
-
-
-
+    .ask textarea{
+        width: 100%;
+    }
 
 
 

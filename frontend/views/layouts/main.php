@@ -22,7 +22,7 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body>
+<body  onload="setInterval('chat.update()', 1500)">
 <?php $this->beginBody() ?>
 
 <div class="wrap">
@@ -72,6 +72,44 @@ AppAsset::register($this);
         <?= Alert::widget() ?>
         <?= $content ?>
 </div>
+
+
+<section class="ask collapsed">
+
+    <div class="left">
+        <div class="arrow">
+            <span class="glyphicon glyphicon-triangle-left" aria-hidden="true" style="margin-bottom: 10px"></span>
+            <span> A </span>
+            <span> S </span>
+            <span> K </span>
+            <span> &nbsp;  </span>
+            <span> U </span>
+            <span> S </span>
+        </div>
+    </div>
+
+    <div class="right">
+        <div id="page-wrap">
+
+            <h2>Ask Your Question</h2>
+
+            <p id="name-area"></p>
+
+            <div id="chat-wrap"><div id="chat-area"></div></div>
+
+            <form id="send-message-area">
+                <p>Your message: </p>
+                <textarea id="sendie" maxlength = '100' placeholder="Type your text"></textarea>
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+</section>
+
 
 <footer>
     <div class="footer-main">
@@ -130,9 +168,7 @@ AppAsset::register($this);
 
 </footer>
 
-
-
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 
 <?php $this->endBody() ?>

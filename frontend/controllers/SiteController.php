@@ -13,7 +13,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use app\models\Logotypes;
-
+use app\models\Category;
 
 /**
  * Site controller
@@ -223,6 +223,9 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+
+
+
 
 
 }

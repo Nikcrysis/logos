@@ -61,6 +61,9 @@ class LogosController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        /*$cat = $_POST['Category']['name'];
+        $query = Category::find('id')->where(['name' => $cat]);
+        $_POST['Category']['name'] = $query->all()[0]['id'];*/
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
