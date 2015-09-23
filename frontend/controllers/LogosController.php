@@ -195,6 +195,9 @@ class LogosController extends Controller
                 $name = md5_file($file->tempName);
 
                 $path = $uploadPath;
+                if (!file_exists($prepath . $path)){
+                    mkdir($prepath . $path, 0755, true);
+                }
                 for ($i = 0; $i <= 2; $i++) {
                     $path .= '/' . $name[$i];
                     if (!file_exists($prepath . $path)){
