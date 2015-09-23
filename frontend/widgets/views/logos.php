@@ -1,4 +1,7 @@
 <?php
+use yii\widgets\LinkPager;
+
+
 foreach ($logos as $logo){
     //echo $logo['path'];
 
@@ -20,4 +23,12 @@ foreach ($logos as $logo){
                         </div>
         ';
 
+}
+
+if (isset($pages)){
+    echo '<div class="text-center">';
+    echo LinkPager::widget([
+        'pagination' => $pages,
+    ]);
+    echo '</div>';
 }

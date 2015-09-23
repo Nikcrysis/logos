@@ -8,6 +8,7 @@ use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 use yii\base\InvalidParamException;
+use yii\db\Query;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -224,8 +225,28 @@ class SiteController extends Controller
         ]);
     }
 
+    public function actionBrowse(){
 
+        if(!isset($_GET['cat'])) {
+            $cat='all';
+        } else{
+            $cat = $_GET['cat'];
+        }
 
+        $query = new Query();
+
+        $query->select('category.name')
+              ->from('category')
+              ->join('RIGHT JOIN', 'logotypes', 'logotypes.category = category.id')
+              ->distinct();
+
+        $model = $query->all();
+
+        return $this->render('browse',[
+            'model' => $model,
+            'cat' => $cat,
+        ]);
+    }
 
 
 }

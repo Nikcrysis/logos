@@ -424,6 +424,7 @@ a.desc:after {
 
             #f1_container {
                 position: relative;
+                z-index:10;
                 display: inline-block;
                 width:228px;
                 height: 225px;
@@ -447,11 +448,13 @@ a.desc:after {
 
             .face.front img{
                 transition: all 0.6s;
+                transform: translateZ(0);
 
             }
 
 
             #f1_container:hover .face.front img{
+                position: relative;
                 z-index: 30;
                 transform: scale(1);
                 filter: grayscale(100%) saturate(10%) opacity(35%);
@@ -462,7 +465,7 @@ a.desc:after {
                 opacity:1;
             }
 
-            .face h3, p{
+            .face h3, .face p{
                 position: absolute;
                 transition: all 0.6s;
                 opacity: 0;

@@ -74,7 +74,7 @@ AppAsset::register($this);
 </div>
 
 
-<section class="ask collapsed">
+<!--<section class="ask collapsed">
 
     <div class="left">
         <div class="arrow">
@@ -108,7 +108,7 @@ AppAsset::register($this);
 
 
 
-</section>
+</section>-->
 
 
 <footer>

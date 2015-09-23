@@ -24,10 +24,6 @@ $('.sample_cont  button').click(function() {
                 $('#logotypes-cont').parent().html(success );
     }
     });
-
-
-
-
 });
 
 
@@ -39,6 +35,7 @@ $("#custom-cat").keypress(function(event){
 });
 
 
+/*
 
 $(".arrow").on('click', function(){
     var ask = $(".ask");
@@ -57,4 +54,5 @@ $(".arrow").on('click', function(){
 
 
 });
+*/
 

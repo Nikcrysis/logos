@@ -171,7 +171,7 @@ $this->title = 'Logos';
                         </div>
                     </div>
                     <div class="browse-cat-buttons">
-                        <button type="button" class="btn-primary">Browse Categories</button>
+                        <a href="/site/browse"><button type="button" class="btn-primary">Browse Categories</button></a>
                     </div>
 
                 </div>
@@ -231,6 +231,7 @@ $this->title = 'Logos';
                         <div  id="logotypes-cont"  class="clearfix animated fadeIn" style="font-size: 0">
                            <?= LogoWidget::widget([
                                'cat' => $cat,
+                               'page' => 'index',
                            ]);
                            ?>
                         </div>
