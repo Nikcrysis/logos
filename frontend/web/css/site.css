@@ -384,6 +384,14 @@ a.desc:after {
         left: -35px;
     }
 
+    #custom-cat-select{
+        width:156px;
+        position: absolute;
+        display: none;
+        z-index: 15;
+        background-color: #ffffff;
+        color:black;
+    }
 
 
 
