@@ -14,7 +14,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'category')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model->cat, 'name')->textInput(['maxlength' => true])->label('Category') ?>
 
     <?= $form->field($model, 'path')->textInput(['maxlength' => true]) ?>
 

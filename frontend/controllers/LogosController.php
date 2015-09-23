@@ -52,6 +52,27 @@ class LogosController extends Controller
     }
 
 
+    public function createCategory($cat)
+    {
+        $category = Category::findOne(['name' => $cat]);
+        if($category == null){
+            $cat_row = new Category();
+            $cat_row->name = $cat;
+            if ($cat_row->save()) {
+                //echo \yii\helpers\Json::encode($cat_row);
+                $cat = $cat_row->id;
+            } else {
+                echo 'failed to create row';
+                //echo $logo->errors();
+            }
+        }else{
+            $cat = $category->id;
+        }
+
+        return $cat;
+    }
+
+
     /**
      * Updates an existing Logotypes model.
      * If update is successful, the browser will be redirected to the 'view' page.
@@ -61,9 +82,19 @@ class LogosController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-        /*$cat = $_POST['Category']['name'];
-        $query = Category::find('id')->where(['name' => $cat]);
-        $_POST['Category']['name'] = $query->all()[0]['id'];*/
+
+
+        if (isset($_POST['Category']['name'])){
+            $cat = $_POST['Category']['name'];
+
+
+            $cat = self::createCategory($cat);
+
+
+            $_POST['Logotypes']['category'] = $cat;
+        }
+
+
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -110,7 +141,6 @@ class LogosController extends Controller
 
 
 
-
     public function AkImgResize($target, $newcopy, $w, $h, $ext) {
         list($w_orig, $h_orig) = getimagesize($target);
         $scale_ratio = $w_orig / $h_orig;
@@ -137,26 +167,13 @@ class LogosController extends Controller
     {
 
         var_dump($_POST['cat']);
-        if (($_POST['cat']) != ''){
+        if (isset($_POST['cat'])){
             $cat = $_POST['cat'];
         }else{
             $cat = 'none';
         }
 
-        $category = Category::findOne(['name' => $cat]);
-        if($category == null){
-            $cat_row = new Category();
-            $cat_row->name = $cat;
-            if ($cat_row->save()) {
-                //echo \yii\helpers\Json::encode($cat_row);
-                $cat = $cat_row->id;
-            } else {
-                echo 'failed to create row';
-                //echo $logo->errors();
-            }
-        }else{
-            $cat = $category->id;
-        }
+        $cat = self::createCategory($cat);
 
 
         $fileName = 'file';

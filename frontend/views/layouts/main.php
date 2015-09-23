@@ -22,7 +22,7 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body  onload="setInterval('chat.update()', 1500)">
+<body>
 <?php $this->beginBody() ?>
 
 <div class="wrap">

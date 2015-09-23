@@ -520,36 +520,17 @@ a.desc:after {
                 height: 100%;
                 overflow: hidden;
                 z-index: 20;
-                transition: all 0.6s ease-out 0s;
+                transition: all 0.6s ease 0s;
             }
 
-            .face.back {
-                width:228px;
-                height: 225px;
-                /*border: 10px solid #e9e9e9;*/
-                font-size: 17px;
-                display: none;
-                box-sizing: border-box;
-                color: white;
-                text-align: center;
-                background-color: #fdfdfd;
-            }
 
-            .face.back img{
-                position: absolute;
-                transition: all 0.6s ease-out 0s;
-                z-index: 5;
-                transform: scale(0.3);
-                filter: opacity(0%);
-                -webkit-filter: opacity(0%);
+            .face.front img{
+                transition: all 0.6s ease-out;
 
             }
 
-            #f1_container:hover .face.back{
-                display: block;
-            }
 
-            #f1_container:hover .face.back img{
+            #f1_container:hover .face.front img{
                 z-index: 30;
                 transform: scale(1);
                 filter: gray;
@@ -557,29 +538,34 @@ a.desc:after {
                 -webkit-filter: grayscale(100%) saturate(10%) opacity(35%);
             }
 
-            #f1_container:hover .front.face{
+            #f1_container:hover .face h3, #f1_container:hover .face p{
+                opacity:1;
+                display: block;
+            }
+
+
+
+            .face h3, p{
+                position: absolute;
+                transition: all 0.6s ease 0s;
                 opacity: 0;
+                z-index: 200;
+            }
+
+            .face h3{
+                text-transform: uppercase;
+                top: 85px;
+                left: 57px;
+                color: #232323;
+                line-height: 19px;
             }
 
 
-            .face.back h3{
-            position: relative;
-            z-index: 10;
-            text-transform: uppercase;
-            margin-top: 85px;
-            color: #232323;
-            line-height: 19px;
-            margin-bottom: 0;
-            }
-
-
-
-
-            .face.back p{
-            position: relative;
-            z-index: 10;
-            font-size: 21px;
-            color: #878787;
+            .face p{
+                top: 135px;
+                left: 80px;
+                font-size: 21px;
+                color: #878787;
             }
 
 
@@ -876,6 +862,7 @@ a.desc:after {
     }
 
     .view table tr td{
+        word-wrap: break-word;
         max-width: 300px;
         border: 1px solid gray;
         padding: 20px 10px;
