@@ -84,8 +84,19 @@ class SiteController extends Controller
         } else{
             $cat = $_GET['cat'];
         }
+
+        $query = new Query();
+
+        $query->select('category.name')
+            ->from('category')
+            ->join('RIGHT JOIN', 'logotypes', 'logotypes.category = category.id')
+            ->distinct();
+
+        $model = $query->all();
+
         return $this->render('index',[
             'cat' => $cat,
+            'model' => $model,
         ]);
     }
 

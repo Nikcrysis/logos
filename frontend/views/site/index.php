@@ -233,20 +233,15 @@ $this->title = 'Logos';
                     <div id="select-wrap" class="col-sm-3 text-right" style="position: relative">
                         <input type="text" id="custom-cat" placeholder="Or select your category!"/>
 
-                        <div id='custom-cat-select' class="text-left">
-                                <option class="option" value="all">all</option>
-                                <option class="option" value="auto">auto</option>
-                                <option class="option" value="abstract">abstract</option>
-                                <option class="option" value="animals">animals</option>
-                                <option class="option" value="business">business</option>
-                                <option class="option" value="ecology">ecology</option>
-                                <option class="option" value="estate">estate</option>
-                                <option class="option" value="nature">nature</option>
-                                <option class="option" value="objects">objects</option>
-                                <option class="option" value="sports">sports</option>
-                                <option class="option" value="new">new</option>
-                                <option class="option" value="new test">new test</option>
-                        </div>
+                        <ul id='custom-cat-select' class="text-left">
+                            <li id="option" class="option visible" value="all">all</li>
+                            <?php
+                            foreach ($model as $category)
+                            {
+                                echo '<li class="option visible" value="' . $category['name'] . '">' . $category['name'] . '</li>';
+                            }
+                            ?>
+                        </ul>
                         <button type="button" class="btn-primary" id="custom-btn">Show!</button>
                     </div>
                 </div>

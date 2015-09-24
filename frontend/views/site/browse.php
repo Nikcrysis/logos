@@ -18,18 +18,28 @@ $this->params['breadcrumbs'][] = $this->title;
     }
 
     .category{
+        position: relative;
         text-align: right;
         margin: 20px;
     }
 
-    select{
-        text-transform: capitalize ;
-        width: 100px;
-        max-height: 200px;
+    #custom-cat-select{
+        top: 26px;
+        left: 105px;
     }
 
-    option{
-        text-transform: capitalize ;
+
+    .browse ul{
+        padding-left: 0;
+    }
+
+    .browse li{
+        list-style: none;
+        cursor: pointer;
+    }
+
+    .browse .option:hover {
+        background-color: orange;
     }
 
 </style>
@@ -38,16 +48,20 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <section class="browse">
     <div class="container">
-        <div class="category">
-            <select id="select-cat">
-                <option value="all">all</option>;
+        <div class="category clearfix">
+
+            <div id="select-wrap" class="col-sm-3 col-sm-offset-9 text-right" style="position: relative">
+                <input type="text" id="custom-cat" placeholder="Select category!"/>
+                <ul id='custom-cat-select' class="text-left">
+                <li class="option" value="all">all</li>
                 <?php
                     foreach ($model as $category)
                     {
-                        echo '<option value="' . $category['name'] . '">' . $category['name'] . '</option>';
+                        echo '<li class="option" value="' . $category['name'] . '">' . $category['name'] . '</li>';
                     }
                 ?>
-            </select>
+                </ul>
+            </div>
         </div>
 
         <div>

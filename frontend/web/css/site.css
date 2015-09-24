@@ -43,7 +43,17 @@ body {
     background-position: center;
 }
 
+li{
+    text-transform: capitalize;
+}
 
+.visible{
+    display: block;
+}
+
+.invisible{
+    display: none;
+}
 
 
 
@@ -384,14 +394,9 @@ a.desc:after {
         left: -35px;
     }
 
-    #custom-cat-select{
-        width:156px;
-        position: absolute;
-        display: none;
-        z-index: 15;
-        background-color: #ffffff;
-        color:black;
-    }
+
+
+
 
 
 
@@ -413,6 +418,40 @@ a.desc:after {
     .sample_cont{
         text-align: center;
         margin: 40px auto;
+    }
+
+    #custom-cat{
+        text-transform: capitalize;
+    }
+
+    #custom-cat-select{
+        width: 154px;
+        position: absolute;
+        display: none;
+        top: 36px;
+        left: 17px;
+        z-index: 15;
+        background-color: #ffffff;
+        color: black;
+    }
+
+    .sample_cont ul{
+        padding-left: 0;
+    }
+
+
+
+    .sample_cont li{
+        list-style: none;
+        cursor: pointer;
+    }
+
+    .hover{
+        background-color: orange;
+    }
+
+    .sample_cont .option:hover {
+        background-color: orange;
     }
 
     .sample-btns{
